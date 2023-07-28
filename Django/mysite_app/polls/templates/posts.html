@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method="get">
+        {{search}}
+        <button type="submit"> search </button>
+    </form>
+
+    <h1> POSTS </h1>
+
+    {% for post in post_list%}
+        <p>
+            {{post.title}}
+            <br>
+            {{post.content}}
+            <br>
+            {{post.author}}
+            <br>
+            {{post.date_created}}
+        </p>
+    {%endfor%}
+    
+{% endblock content %}

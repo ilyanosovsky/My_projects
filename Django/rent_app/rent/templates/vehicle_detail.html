@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle details</title>
+</head>
+<body>
+    <nav>
+        <a href="/rent/rental">Rental List</a>
+        <a href="/rent/customer/">Customer List</a>
+        <a href="/rent/vehicle/">Vehicle List</a>
+        <a href="/rent/rental/add">Add Rental</a>
+        <a href="/rent/customer/add">Add Customer</a>
+        <a href="/rent/vehicle/add">Add Vehicle</a>
+    </nav>
+
+    <h1>All the information about vehicle: </h1>
+    <h2>Vehicle details: </h2>
+    <p>Vehicle type: {{vehicle.vehicle_type}}</p>
+    <p>Vehicle size: {{vehicle.size}}</p>
+    <p>Vehicle real cost: {{vehicle.real_cost}}</p>
+    <p>Date created: {{vehicle.date_created}} </p>
+</body>
+</html>

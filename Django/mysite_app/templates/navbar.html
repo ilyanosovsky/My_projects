@@ -1,0 +1,16 @@
+<div id="navcontainer">
+    <ul id="navlist">
+    <li><a href="{% url 'posts' %}">Posts</a></li>
+    <li><a href="{% url 'add-category' %}">Add category</a></li>
+    <li><a href="{% url 'add-post'%}">Add post</a></li>
+
+    <li><a href="{% url 'register'%}">Register</a></li>
+    
+    {%if user.is_authenticated %}
+    <li><a href="{% url 'logout' %}">Logout</a></li>
+    {%else%}
+    <li><a href="{% url 'login' %}">Login</a></li>
+    {%endif%}
+    </ul>
+
+</div>

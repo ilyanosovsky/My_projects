@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add vehicle</title>
+</head>
+<body>
+
+    <nav>
+        <a href="/rent/rental">Rental List</a>
+        <a href="/rent/customer/">Customer List</a>
+        <a href="/rent/vehicle/">Vehicle List</a>
+        <a href="/rent/rental/add">Add Rental</a>
+        <a href="/rent/customer/add">Add Customer</a>
+        <a href="/rent/vehicle/add">Add Vehicle</a>
+    </nav>
+
+    <!-- provide a form to add a new vehicle. -->
+    <h1>Add Vehicle:</h1>
+    <form method="post">
+        {% csrf_token %}   
+        <!-- choose vehicle type 
+        <label for="vehicle_type">Vehicle Type:</label>
+        <select name="vehicle_type" id="vehicle_type">
+            <option value="bike">Bike</option>
+            <option value="electric bike">Electric Bike</option>
+            <option value="scooter">Scooter</option>
+            <option value="jetpack">Jetpack</option>
+            <option value="chopper">Chopper</option>
+        </select>
+
+        choose the date it was created 
+        <label for="date_created">Date Created:</label>
+        <input type="date" name="date_created" id="date_created">
+
+        choose real cost of the vehicle 
+        <label for="real_cost">Real Cost:</label>
+        <input type="number" name="real_cost" id="real_cost">
+
+        choose the size of the vehicle
+        <label for="size">Size:</label>
+        <select name="size" id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="double">Double</option>
+        </select> -->
+
+
+        <!-- form objects -->
+        {{form.as_p}}
+        <!-- submit button -->
+        <button type="submit">Submit</button>
+
+    </form>
+    
+</body>
+</html>

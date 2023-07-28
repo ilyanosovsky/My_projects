@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle list</title>
+</head>
+<body>
+    <nav>
+        <a href="/rent/rental">Rental List</a>
+        <a href="/rent/customer/">Customer List</a>
+        <a href="/rent/vehicle/">Vehicle List</a>
+        <a href="/rent/rental/add">Add Rental</a>
+        <a href="/rent/customer/add">Add Customer</a>
+        <a href="/rent/vehicle/add">Add Vehicle</a>
+    </nav>
+
+    <h1>Vehicle list: </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Vehicle type</th>
+                <th>Vehicle size</th>
+                <th>Vehicle real cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for vehicle in vehicles %}
+            <tr>
+                <td> <a href="/rent/vehicle/{{vehicle.id}}">{{vehicle.vehicle_type}}</a> </td>
+                <td>{{vehicle.size}}</td>
+                <td>{{vehicle.real_cost}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+</body>
+</html>

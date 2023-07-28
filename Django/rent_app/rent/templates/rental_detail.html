@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Details</title>
+</head>
+<body>
+    <nav>
+        <a href="/rent/rental">Rental List</a>
+        <a href="/rent/customer/">Customer List</a>
+        <a href="/rent/vehicle/">Vehicle List</a>
+        <a href="/rent/rental/add">Add Rental</a>
+        <a href="/rent/customer/add">Add Customer</a>
+        <a href="/rent/vehicle/add">Add Vehicle</a>
+    </nav>
+
+    <h1>All the information about rental: </h1>
+    <h2>Customer details: </h2>
+    <p>Customer name: {{rental.customer}}</p>
+    <p>Customer phone: {{rental.customer.phone_number}}</p>
+    <p>Customer email: {{rental.customer.email}}</p>
+    <h2>Vehicle details: </h2>
+    <p>Vehicle type: {{rental.vehicle.vehicle_type}}</p>
+    <p>Vehicle size: {{rental.vehicle.size}}</p>
+    <p>Vehicle real cost: {{rental.vehicle.real_cost}}</p>
+    <h2>Rental details: </h2>
+    <p>Rental date: {{rental.rental_date}}</p>
+    <p>Return date: {{rental.return_date}}</p>
+    <!-- <p>Returned: {{rental.returned}}</p>
+    <p>Cost: {{rental.cost}}</p> -->
+
+
+    
+</body>
+</html>

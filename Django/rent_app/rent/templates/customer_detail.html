@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer detail</title>
+</head>
+<body>
+    <nav>
+        <a href="/rent/rental">Rental List</a>
+        <a href="/rent/customer/">Customer List</a>
+        <a href="/rent/vehicle/">Vehicle List</a>
+        <a href="/rent/rental/add">Add Rental</a>
+        <a href="/rent/customer/add">Add Customer</a>
+        <a href="/rent/vehicle/add">Add Vehicle</a>
+    </nav>
+
+    <h1>Information about Customer: </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Customer</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{customer}}</td>
+                <td>{{customer.phone_number}}</td>
+                <td>{{customer.email}}</td>
+                <td>{{customer.address}}</td>
+                <td>{{customer.city}}</td>
+                <td>{{customer.country}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
