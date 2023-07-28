@@ -3,7 +3,7 @@ class Stats():
     def __init__(self):
         self.reset_stats()
         self.run_game = True
-        with open('SpaceGame/highscore.txt', 'r') as file_object:
+        with open('Python/SpaceGame/highscore.txt', 'r') as file_object:
             self.high_score = int(file_object.readline())
 
     def reset_stats(self):

@@ -10,7 +10,7 @@ def run(): # Main function
     pygame.init() # Initialize pygame
     screen = pygame.display.set_mode((700, 800)) # Create screen
     pygame.display.set_caption("Space Game") # Set caption
-    bg_img = pygame.image.load("SpaceGame/image/bg_stars.jpeg") # Load background image
+    bg_img = pygame.image.load("Python/SpaceGame/image/bg_stars.jpeg") # Load background image
     gun = Gun(screen) # Create gun
     bullets = Group() # Create group of bullets
     inos = Group() # Create group of Inos

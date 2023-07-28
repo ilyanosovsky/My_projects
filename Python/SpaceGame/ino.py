@@ -7,7 +7,7 @@ class Ino(pygame.sprite.Sprite): # create a child class of Sprite
         # initialize the Ino and set its starting position
         super(Ino, self).__init__() # initialize the parent class of Ino
         self.screen = screen # assign screen to the Ino class
-        self.image = pygame.image.load('SpaceGame/image/ino.png') # load image of Ino
+        self.image = pygame.image.load('Python/SpaceGame/image/ino.png') # load image of Ino
         self.image = pygame.transform.scale(self.image, (50, 50)) # scale image of Ino
         self.rect = self.image.get_rect() # get rectangle of Ino
         self.rect.x = self.rect.width # set x coordinate of Ino to the width of the rectangle

@@ -11,7 +11,7 @@
 
 class AnagramChecker :
     def __init__(self):
-        with open("Week3/Day5/Anagram Checker/word_list.txt") as file:
+        with open("Python/AnagramChecker/word_list.txt") as file:
             self.word_list = file.read().splitlines()
 
     def is_valid_word(self, word):
