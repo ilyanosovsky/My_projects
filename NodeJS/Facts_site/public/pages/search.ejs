@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body>
+    <%- include('../partials/header'); %>
+
+    <div class="container">
+        <div class="search-forms">
+            <form id="titleSearchForm" method="POST">
+                <label for="searchTitle">Search Title</label><br>
+                <input type="search" id="searchTitle" name="searchTitle" /><br>
+                <button>Search</button>
+            </form>
+            <form id="categorySearchForm" method="POST">
+                <label for="searchCategory">Search Category</label><br>
+                <select name="searchCategory" id="searchCategory">
+                    <% categories.forEach(category => { %>
+                        <option value=<%=category%>><%=category%></option>
+                    <% }) %>
+                </select><br>
+                <button>Search</button>
+            </form>
+        </div>
+        <main>
+            <%- include('../partials/posts'); %>
+        </main>
+    </div>
+    
+    <%- include('../partials/footer'); %>
+</body>
+
+</html>

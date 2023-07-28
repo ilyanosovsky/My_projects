@@ -1,0 +1,16 @@
+<div class="posts">
+    <h2>Posts</h2>
+    <% if (items.length != 0) { %>
+        <% items.forEach(post => { %>
+            <div class="card-body">
+                <a href=<%=post.link%>><h5 class="card-title"><%=post.title%></h5></a>
+                
+                <h6 class="card-title"><%=post.pubDate%> | <%=post.creator%> | Categories: <strong><%=post.categories%></strong></h6>
+                
+                <p class="card-text text-center">
+                    <span><%=post.contentSnippet%></span>
+                </p>
+            </div>
+        <% }) %>
+    <% } %>
+</div>
